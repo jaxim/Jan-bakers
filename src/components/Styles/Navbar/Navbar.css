@@ -7,8 +7,7 @@
   align-items: center;
   justify-content: center;
 }
-
-.main {
+.navbar .main {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -17,82 +16,106 @@
   padding: 0;
   margin: 0;
 }
-.main .contact {
+.navbar .main .contact {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   color: #ffffff;
 }
-.main .contact span {
+.navbar .main .contact span {
   color: #3498db;
   font-weight: bold;
 }
-.main .contact a {
+.navbar .main .contact a {
   color: #ffffff;
   font-size: 1.7rem;
   font-weight: bold;
   transition: color 0.3s;
 }
-.main .contact a:hover {
+.navbar .main .contact a:hover {
   color: #396c8e;
 }
-.main .brand {
+.navbar .main .brand {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.main .brand .logo-text {
+.navbar .main .brand .logo-text {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   color: #ffffff;
 }
-.main .icons {
+.navbar .main .icons {
   display: flex;
   gap: 1.5rem;
   font-size: 1.5rem;
 }
-.main .icons i {
+.navbar .main .icons .input-group {
+  width: 300px;
+}
+.navbar .main .icons .input-group .form-control {
+  border-radius: 5px 0 0 5px;
+}
+.navbar .main .icons .input-group .btn {
+  border-radius: 0 5px 5px 0;
+}
+.navbar .main .icons i {
   color: #000000;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
-.main .icons i:hover {
+.navbar .main .icons i:hover {
   transform: scale(1.2);
 }
-
-a {
-  color: #3498db;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-a:hover {
-  color: #396c8e;
-}
-
-.brand {
+.navbar .search-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  margin-top: 1rem;
 }
-.brand .logo-text {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #ffffff;
+.navbar .search-container .search-results-container {
+  width: 100%;
+  max-width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #ecf0f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  max-height: 200px;
+  overflow-y: auto;
 }
-
-.icons {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 1.5rem;
+.navbar .search-container .search-results-container .search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.icons i {
-  color: #000000;
+.navbar .search-container .search-results-container .search-results li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ecf0f1;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: background-color 0.3s;
 }
-.icons i:hover {
-  transform: scale(1.2);
+.navbar .search-container .search-results-container .search-results li:hover {
+  background-color: #ecf0f1;
+}
+.navbar .search-container .search-results-container .search-results li:last-child {
+  border-bottom: none;
+}
+.navbar .search-container .search-results-container .show-more {
+  text-align: center;
+  padding: 0.5rem;
+}
+.navbar .search-container .search-results-container .show-more button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.navbar .search-container .search-results-container .show-more button:hover {
+  background-color: #396c8e;
 }/*# sourceMappingURL=Navbar.css.map */

@@ -2,76 +2,54 @@ import "./Styles/Footer/Footer.css";
 
 export default function Footer() {
   return (
-    <>
-      <footer>
-        <ul>
+    <footer>
+      <div className="footer-content">
+        <div className="footer-section">
+          <h2>Find it fast</h2>
+          <ul>
+            <li>Cakes</li>
+            <li>Gift Hampers</li>
+            <li>Chocolates</li>
+            <li>Groceries</li>
+            <li>Decor items</li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h2>Contact us</h2>
+          <div className="contact-info">
+            <p>If you have any questions or suggestions, contact us on:</p>
+            <p>
+              <i className="fas fa-home"></i>
+              Jan Bakers, Mohanapuram <br />
+              Mangalapuram, Thiruvanthapuram
+            </p>
+            <p>
+              <i className="fas fa-phone"></i>
+              +91 8606307152 +91 8590599396
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>&copy; 2024 Jan Bakers. All rights reserved.</p>
+        <ul className="social-icons">
           <li>
-            <ul>
-              <li>
-                <h2>Find in fast</h2>
-                <ul>
-                  <li>Cakes</li>
-                  <li>Gift Hampers</li>
-                  <li>Chocolates</li>
-                  <li>Groceries</li>
-                  <li>Decore items</li>
-                </ul>
-              </li>
-              <li>
-                <h2>Contact us</h2>
-                <ul>
-                  <li>
-                    If you have any question or <br />
-                    suggestions contact us on
-                  </li>
-                  <li>
-                    <i className="fas fa-home"></i>
-                    Jan Bakers, Mohanapuram <br />
-                    Mangalapuram, Thiruvanthapuram
-                  </li>
-                  <li>
-                    <i className="fas fa-phone"></i>
-                    +91 8606307152 +91 8590599396
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <i className="fa-brands fa-facebook"></i>
           </li>
           <li>
-            <div className="foot">
-              <p>Copyright ©2024 janbakers All right Reserved</p>
-              <ul>
-                <li>
-                  <i className="fas"></i>
-                </li>
-                <li>
-                  <i className="fas"></i>
-                </li>
-                <li>
-                  <i className="fas"></i>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <i className="fas fa-facebook"></i>
-                </li>
-                <li>
-                  <i className="fas fa-twitter"></i>
-                </li>
-                <li>
-                  <i className="fas fa-instagram"></i>
-                </li>
-                <li>
-                  <i className="fas fa-linkedin"></i>
-                </li>
-                <li>
-                  <i className="fas fa-youtube"></i>
-                </li>
-              </ul>
-            </div>
+            <i className="fa-brands fa-twitter"></i>
+          </li>
+          <li>
+            <i className="fa-brands fa-instagram"></i>
+          </li>
+          <li>
+            <i className="fa-brands fa-linkedin"></i>
+          </li>
+          <li>
+            <i className="fa-brands fa-youtube"></i>
           </li>
         </ul>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 }

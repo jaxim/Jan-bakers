@@ -1,38 +1,53 @@
 .cat {
   width: 100%;
   margin-top: 50px;
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+.cat h1 {
+  font-size: 2rem;
+  color: #3498db;
+  margin-bottom: 20px;
 }
 .cat .cat-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  gap: 20px;
 }
 .cat .cat-list .cat-item {
   width: 200px;
   height: 300px;
-  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 1px 50px rgba(241, 241, 241, 0.1882352941);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.cat .cat-list .cat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
 }
 .cat .cat-list .cat-item .cat-item_img {
-  border-radius: 15px;
+  border-radius: 50%;
   width: 150px;
   height: 150px;
-  background: #000000;
-  border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.3s;
+}
+.cat .cat-list .cat-item .cat-item_img:hover {
+  transform: scale(1.1);
 }
 .cat .cat-list .cat-item .cat-item_name {
   text-align: center;
   margin-top: 10px;
+  font-size: 1.2rem;
+  color: #95a5a6;
 }/*# sourceMappingURL=Cat.css.map */
