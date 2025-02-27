@@ -1,0 +1,88 @@
+.offer {
+  background-color: #151515;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer h1 {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+.offer h1 span {
+  color: #1b9600;
+}
+.offer #timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.offer #timer .time-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 2rem;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0.4rem;
+  text-align: center;
+}
+.offer #timer .time-box span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+  margin-left: 0.1rem;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+  z-index: 1;
+}
+.hero::before {
+  content: "";
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../../assets/hero.jpg") no-repeat center center/cover;
+  opacity: 1;
+  z-index: -1;
+}
+.hero .hero-content {
+  margin-left: 7rem;
+}
+.hero .hero-content h1 {
+  font-size: 3rem;
+}
+.hero .hero-content p {
+  font-size: 1.8541409147rem;
+}
+.hero .hero-content .btn {
+  padding: 0.7rem 1.2rem;
+  margin: 1rem 1rem 1rem 0;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.hero .hero-content .btn:hover {
+  background-color: #217dbb;
+}/*# sourceMappingURL=Home.css.map */

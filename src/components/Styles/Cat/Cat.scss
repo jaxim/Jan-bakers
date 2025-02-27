@@ -1,0 +1,39 @@
+@import "../Colors";
+
+.cat {
+  width: 100%;
+  margin-top: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .cat-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    .cat-item {
+      width: 200px;
+      height: 300px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 1px 1px 50px #f1f1f130;
+      border-radius: 10px;
+      .cat-item_img {
+        border-radius: 15px;
+        width: 150px;
+        height: 150px;
+        background: $black;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .cat-item_name {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+}
