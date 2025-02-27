@@ -11,6 +11,10 @@ export default function Navbar() {
     navigate(`/items?search=${searchQuery}`);
   };
 
+  const handleUserClick = () => {
+    navigate("/login");
+  };
+
   return (
     <header>
       <nav className="navbar">
@@ -42,7 +46,12 @@ export default function Navbar() {
               </div>
             </div>
             <i className="fas fa-shopping-cart" aria-label="Cart"></i>
-            <i className="fas fa-user" aria-label="User"></i>
+            <i
+              className="fas fa-user"
+              aria-label="User"
+              onClick={handleUserClick}
+              style={{ cursor: "pointer" }}
+            ></i>
           </li>
         </ul>
       </nav>
